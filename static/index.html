@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/main.css" />
+    <title>Phone to the Future</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
+    <div
+      class="
+        container-fluid
+        d-flex
+        justify-content-center
+        align-items-center
+        bg-white
+      "
+      style="height: 100vh"
+    >
+      <div
+        class="
+          phone
+          border border-secondary
+          rounded-4
+          d-flex
+          justify-content-center
+        "
+        id="frame-phone"
+      >
+        <div class="bg-secondary rounded-bottom" id="notch">
+          <div class="bg-light rounded-circle ms-2" id="camera"></div>
+        </div>
+      </div>
+      <div id="content-phone" class="phone position-fixed text-center">
+        <h2 class="pt-3 border-bottom border-2">Hello World</h2>
+        <p class="pt-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nihil
+          repellat optio ratione obcaecati doloremque inventore molestiae dicta
+          nulla, quia explicabo consequatur odit accusamus sit ea, reiciendis
+          consequuntur eum quos?
+        </p>
+      </div>
+      <div class="phone bg-light rounded-4 position-fixed" id="bg-phone"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,30 @@
+body {
+  --scale-factor: 2.5;
+}
+.phone {
+  width: calc(9rem * var(--scale-factor));
+  height: calc(18rem * var(--scale-factor));
+}
+#frame-phone {
+  --bs-border-width: calc(0.3rem * var(--scale-factor));
+  z-index: 2;
+  pointer-events: none;
+}
+#notch {
+  width: calc(3rem * var(--scale-factor));
+  height: calc(0.3rem * var(--scale-factor));
+  --bs-border-radius: var(--bs-border-radius-xl);
+  z-index: 2;
+}
+#camera {
+  width: calc(0.2rem * var(--scale-factor));
+  height: calc(0.2rem * var(--scale-factor));
+  margin-top: -0.25rem;
+}
+#bg-phone {
+  z-index: 0;
+}
+#content-phone {
+  padding: calc(0.3rem * var(--scale-factor));
+  z-index: 1;
+}
