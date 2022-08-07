@@ -40,6 +40,12 @@ inv {
 #content-phone {
   padding: calc(0.3em * var(--scale-factor));
   z-index: 1;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 #content-phone[debug='true'] * {
   outline: 1px #222 solid;
