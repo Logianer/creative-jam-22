@@ -1,30 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap');
 body {
   --scale-factor: 2.5;
+  --bs-body-font-family: 'Maven Pro', var(--bs-font-sans-serif);
 }
 .phone {
-  width: calc(9rem * var(--scale-factor));
-  height: calc(18rem * var(--scale-factor));
+  --bs-secondary-rgb: 41, 33, 186;
+  width: calc(9em * var(--scale-factor));
+  height: calc(18em * var(--scale-factor));
 }
 #frame-phone {
-  --bs-border-width: calc(0.3rem * var(--scale-factor));
+  --bs-border-width: calc(0.3em * var(--scale-factor));
   z-index: 2;
   pointer-events: none;
 }
 #notch {
-  width: calc(3rem * var(--scale-factor));
-  height: calc(0.3rem * var(--scale-factor));
+  width: calc(3em * var(--scale-factor));
+  height: calc(0.3em * var(--scale-factor));
   --bs-border-radius: var(--bs-border-radius-xl);
   z-index: 2;
 }
 #camera {
-  width: calc(0.2rem * var(--scale-factor));
-  height: calc(0.2rem * var(--scale-factor));
-  margin-top: -0.25rem;
+  width: calc(0.2em * var(--scale-factor));
+  height: calc(0.2em * var(--scale-factor));
+  margin-top: -0.25em;
 }
 #bg-phone {
   z-index: 0;
 }
 #content-phone {
-  padding: calc(0.3rem * var(--scale-factor));
+  padding: calc(0.3em * var(--scale-factor));
   z-index: 1;
+}
+#status-bar {
+  --bs-bg-opacity: 0.2;
+  min-height: calc(0.5em * var(--scale-factor));
+}
+#app-header {
+  --bs-bg-opacity: 0.2;
 }

@@ -10,6 +10,10 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style/main.css" />
     <title>Phone to the Future</title>
   </head>
@@ -38,14 +42,25 @@
           <div class="bg-light rounded-circle ms-2" id="camera"></div>
         </div>
       </div>
-      <div id="content-phone" class="phone position-fixed text-center">
-        <h2 class="pt-3 border-bottom border-2">Hello World</h2>
-        <p class="pt-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nihil
-          repellat optio ratione obcaecati doloremque inventore molestiae dicta
-          nulla, quia explicabo consequatur odit accusamus sit ea, reiciendis
-          consequuntur eum quos?
-        </p>
+      <div id="content-phone" class="phone position-fixed">
+        <div id="status-bar" class="bg-white px-1 d-flex">
+          <div class="row">
+            <div class="col text-left">
+              <i class="fa-solid fa-wifi fa-sm align-left"></i>
+            </div>
+            <div class="col">One of three columns</div>
+            <div class="col text-right">
+              <i
+                class="
+                  fa-solid fa-battery-three-quarters fa-rotate-270 fa-sm
+                  align-right
+                "
+              ></i>
+              65%
+            </div>
+          </div>
+        </div>
+        <div id="app-header" class="py-3 ps-3 bg-dark">Header</div>
       </div>
       <div class="phone bg-light rounded-4 position-fixed" id="bg-phone"></div>
     </div>
