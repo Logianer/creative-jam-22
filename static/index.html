@@ -11,21 +11,19 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="/style/main.css" />
     <title>Phone to the Future</title>
   </head>
   <body>
     <div
-      class="
-        container-fluid
-        d-flex
-        justify-content-center
-        align-items-center
-        bg-white
-      "
+      class="container-fluid d-flex justify-content-center align-items-center"
       style="height: 100vh"
     >
       <div
@@ -43,24 +41,68 @@
         </div>
       </div>
       <div id="content-phone" class="phone position-fixed">
-        <div id="status-bar" class="bg-white px-1 d-flex">
+        <div id="status-bar" class="bg-white px-1">
           <div class="row">
-            <div class="col text-left">
-              <i class="fa-solid fa-wifi fa-sm align-left"></i>
-            </div>
-            <div class="col">One of three columns</div>
-            <div class="col text-right">
-              <i
-                class="
-                  fa-solid fa-battery-three-quarters fa-rotate-270 fa-sm
-                  align-right
-                "
-              ></i>
-              65%
+            <div class="col text-start"><time class="fw-bold">--:--</time></div>
+            <div class="col text-end">
+              <i class="fas fa-signal-alt-3 fa-sm"></i
+              ><i class="fas fa-wifi fa-sm ms-1"></i
+              ><i class="fas fa-battery-three-quarters fa-sm ms-2"></i>
             </div>
           </div>
         </div>
-        <div id="app-header" class="py-3 ps-3 bg-dark">Header</div>
+        <div id="app-header" class="py-2 fw-bold text-center">Messages</div>
+        <div id="chat-container">
+          <header>Chats</header>
+          <div class="chat row">
+            <div class="col-auto img">
+              <img
+                src="https://avatars.dicebear.com/api/croodles/oueg3tafelspitsbo.svg"
+                alt=""
+              />
+            </div>
+            <div class="col">
+              <span class="chat-title fw-bold">Lorem</span
+              ><span class="last-msg text-dark"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
+                cumque.</span
+              >
+            </div>
+          </div>
+          <div class="chat row">
+            <div class="col-auto img">
+              <img
+                src="https://avatars.dicebear.com/api/croodles/4h9t3f2385GG|.svg"
+                alt=""
+              />
+            </div>
+            <div class="col">
+              <span class="chat-title fw-bold">Corrupti</span
+              ><span class="last-msg text-dark"
+                >consequatur molestias iste dolor explicabo quas eligendi
+                officia nesciunt nam? Corrupti, magnam.</span
+              >
+            </div>
+          </div>
+          <div class="chat row">
+            <div class="col-auto img">
+              <img
+                src="https://avatars.dicebear.com/api/croodles/92624196mgwru41.svg"
+                alt=""
+              />
+            </div>
+            <div class="col">
+              <span class="chat-title fw-bold">recusandae</span
+              ><span class="last-msg text-dark"
+                >earum nostrum fuga ad! Voluptatum odit, repellat fugit
+                distinctio sit numquam, quae magnam aliquid accusamus nobis
+                asperiores eius ipsum doloribus reprehenderit quod quo expedita
+                ab quasi alias et optio minus vitae eos recusandae. Eveniet,
+                ipsum. Recusandae, tempore expedita!</span
+              >
+            </div>
+          </div>
+        </div>
       </div>
       <div class="phone bg-light rounded-4 position-fixed" id="bg-phone"></div>
     </div>
@@ -69,5 +111,11 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
