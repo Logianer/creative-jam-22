@@ -10,3 +10,6 @@ $(document).on('keydown', (e) => {
 $(document).on('keyup', (e) => {
   if (e.key === 'h') $('#content-phone').attr('debug', null);
 });
+$('.chat').on('click', (e) => {
+  console.log($(e.currentTarget).find('span.chat-title').text());
+});
