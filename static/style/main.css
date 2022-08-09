@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap');
+body {
+  --scale-factor: 2.5;
+  --bs-body-font-family: 'Maven Pro', var(--bs-font-sans-serif);
+  background: url(https://img.freepik.com/vektoren-premium/raumhintergrund-mit-abstrakter-form-und-sternen_189033-30.jpg?w=2000)
+    no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1rem);
+}
+.phone {
+  --bs-secondary-rgb: 41, 33, 186;
+  width: calc(9em * var(--scale-factor));
+  height: calc(18em * var(--scale-factor));
+}
+inv {
+  opacity: 0;
+}
+
+#frame-phone {
+  --bs-border-width: calc(0.3em * var(--scale-factor));
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 0 2rem 0.1rem rgba(255, 255, 255, 0.6);
+}
+#notch {
+  width: calc(3em * var(--scale-factor));
+  height: calc(0.3em * var(--scale-factor));
+  --bs-border-radius: var(--bs-border-radius-xl);
+  z-index: 2;
+}
+#camera {
+  width: calc(0.2em * var(--scale-factor));
+  height: calc(0.2em * var(--scale-factor));
+  margin-top: -0.25em;
+}
+#bg-phone {
+  z-index: 0;
+}
+
+#content-phone {
+  padding: calc(0.3em * var(--scale-factor));
+  z-index: 1;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+#content-phone[debug='true'] * {
+  outline: 1px #222 solid;
+}
+#content-phone > #status-bar {
+  --bs-bg-opacity: 0.2;
+  min-height: calc(0.5em * var(--scale-factor));
+}
+#app-header {
+  --bs-bg-opacity: 0.2;
+}
+#chat-container > header {
+  font-weight: 700;
+  margin: 0 0 0.75rem 0.75rem;
+}
+#chat-container > .chat {
+  padding: 0.25rem 0 0.25rem 0.75rem;
+  --bs-gutter-x: 0 !important;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+}
+#chat-container > .chat:hover {
+  background-color: rgba(var(--bs-dark-rgb), 0.1);
+}
+
+#chat-container > .chat span {
+  display: block;
+}
+#chat-container > .chat span.last-msg {
+  --bs-text-opacity: 0.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 14rem;
+}
+#chat-container > .chat > .img {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  margin: 0 0.5rem 0 0;
+}
